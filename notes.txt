@@ -1,0 +1,22 @@
+Gitbash:
+-Make sure you're in correct dir (cd desktop, cd AnikaDS)
+-Make another directory: "mkdir [name]"
+-Make a file: "touch [filename.filetype]" (ex. functions.py)
+
+Atom:
+-Click File --> Open Folder --> example: AnikaDS
+-Open terminal with plus sign on bottom left
+-Click on desired .py file on left
+-CODE (in .py file, see upper bar)
+-CTRL+S, get rid of blue dot
+-In terminal, run python
+-Import desired .py file (ex. import test)
+-Run stuff
+
+Github - Gitbash Part 2:
+-Check directory again
+-git status (check for red)
+-git add ["name of file"]
+-git status (check for green == in staging directory)
+-git commit -m 'Message explaining what I changed/added'
+-git push
