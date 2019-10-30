@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Here we play with a dictionary!</p>
+    <p>What animals do we have?</p>
+    <ul>
+      {% for animal in animals %}
+      <li>{{animal}}</li>
+      {% endfor %}
+    </ul>
+    <p>Do those animals have names?</p>
+    <ul>
+      {% print(animals) %}
+    </ul>
+    <p>How ugly! Show me a pretty version, please.</p>
+    <ul>
+      {% for x in animals %}
+      <li>{{animals[x]}}</li>
+      {% endfor %}
+    </ul>
+    <p>But how do I know which animal has which name?</p>
+    <ul>
+      {% for x, y in animals.items() %}
+      {% print(y, 'the', x) %}
+      {% endfor %}
+    </ul>
+  <img src="{{url_for('static', filename='cat-dog-bird.jpg')}}" />
+  </body>
+</html>

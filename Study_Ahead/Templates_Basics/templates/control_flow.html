@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Here we use a for loop for a list</p>
+    <ul>
+      {% for pup in puppies %}
+      <li>{{pup}}</li>
+      {% endfor %}
+      <p>We can also add if/else statements</p>
+      {% if 'Rudy' in puppies %}
+      <p>Found you in the list!</p>
+      {% else %}
+      <p>Hmm... 'Rudy' isn't in the list</p>
+      {% endif %}
+    </ul>
+  </body>
+</html>
